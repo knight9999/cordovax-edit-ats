@@ -33,12 +33,12 @@ the following ATS is created
 </dict>
 ```
 
-Create ATS with NSAllowsArbitraryLoads true
+Create (or override) ATS with NSAllowsArbitraryLoads true
 ```
 $ npx xordovax-edit-ats create true
 ```
 
-Create ATS with NSAllowsArbitraryLoads false
+Create (or override) ATS with NSAllowsArbitraryLoads false
 ```
 $ npx xordovax-edit-ats create false
 ```
