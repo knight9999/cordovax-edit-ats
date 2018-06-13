@@ -1,0 +1,17 @@
+{
+  "name": "cordova-util-ios-ats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Asial",
+  "license": "MIT",
+  "bin": {
+    "cordova-util-ios-ats": "bin/cordova-util-ios-ats"
+  },
+  "dependencies": {
+    "cordova-common": "^2.2.3"
+  }
+}
