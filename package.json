@@ -1,7 +1,11 @@
 {
   "name": "cordovax-edit-ats",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/knight9999/cordovax-edit-ats.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

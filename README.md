@@ -11,7 +11,7 @@ $ npm install cordovax-edit-ats --save-dev
 on the cordova application directory.
 
 
-# Usage
+# Commandline Usage
 
 Remove ATS setting
 ```
@@ -23,24 +23,43 @@ Create ATS setting
 $ npx cordovax-edit-ats create
 ```
 
+the following ATS is created
 
-# With Cordova plugin hooks.
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</dict>
+```
+
+Create ATS with NSAllowsArbitraryLoads true
+```
+$ npx xordovax-edit-ats create true
+```
+
+Create ATS with NSAllowsArbitraryLoads false
+```
+$ npx xordovax-edit-ats create false
+```
+
+# With Cordova hook.
 
 
-For example,
+Example:
 
 config.xml
 ```
-<hook src="scripts/removeATS.js" type="after_platform_add" />
+<hook src="scripts/editPlist.js" type="after_platform_add" />
 ```
 
-scripts/removeATS.js
+scripts/editPlist.js
 ```
 var editATS = require('cordovax-edit-ats');
 
 module.exports = function(context) {
   if (context.opts.cordova.platforms.includes('ios')) {
-    editATS('remove', context.opts.projectRoot);
+    editATS('create_false', context.opts.projectRoot);
   }
 };
 ```
