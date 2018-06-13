@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var command = process.argv.length > 2 ? process.argv[2] : 'help';
+var projectPath = process.argv.length > 3 ? process.argv[3] : '.';
+
+var editATS = require('../index');
+
+if (['create', 'remove', 'rm'].includes(command)) {
+  editATS(command, projectPath);
+} else {
+  console.error("Usage: `npx cordovax-edit-ats create` or `npx cordovax-edit-ats remove`.");
+}

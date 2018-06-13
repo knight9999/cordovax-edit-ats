@@ -1,5 +1,5 @@
 {
-  "name": "cordova-util-ios-ats",
+  "name": "cordovax-edit-ats",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,6 @@
   "author": "Asial",
   "license": "MIT",
   "bin": {
-    "cordova-util-ios-ats": "bin/cordova-util-ios-ats"
-  },
-  "dependencies": {
-    "cordova-common": "^2.2.3"
+    "cordovax-edit-ats": "bin/cordovax-edit-ats"
   }
 }
